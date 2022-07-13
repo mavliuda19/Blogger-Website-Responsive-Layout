@@ -91,7 +91,6 @@ body {
 	letter-spacing: 1.5px;
 	color: #3d8b74;
 }
-
 /* --------------------------------------burger */
 .icon-menu {
 	display: none;
@@ -310,6 +309,7 @@ body {
 	margin-top: 16px;
 	display: inline-block;
 	cursor: pointer;
+	color: #232323;
 }
 /* ------------------------------------contact-block */
 .content-contacts {
@@ -407,6 +407,7 @@ body {
 	letter-spacing: 1.5px;
 	text-decoration-line: underline;
 	cursor: pointer;
+	color: #232323;
 }
 /* -------------------------------------pagination */
 .content-pagination {

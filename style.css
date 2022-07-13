@@ -55,10 +55,12 @@ body {
 }
 .header-container {
 	display: flex;
+	justify-content: space-between;
 	min-height: 77px;
 	align-items: center;
 }
 .header-logo {
+	z-index: 5;
 	text-decoration: none;
 	font-family: 'Josefin Sans', sans-serif;
 	font-style: normal;
@@ -68,15 +70,12 @@ body {
 	text-transform: uppercase;
 	color: #232323;
 }
-.header-menu {
-	margin: 0px 0px 0px 350px;
-}
 .menu-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 .menu-item:not(:last-child) {
-	margin-right: 46px;
+	margin-right: 49px;
 }
 .menu-link {
 	text-decoration: none;
@@ -92,22 +91,20 @@ body {
 	letter-spacing: 1.5px;
 	color: #3d8b74;
 }
-.nav-button {
+
+/* --------------------------------------burger */
+.icon-menu {
 	display: none;
-	padding: 0;
-	border: none;
-	background-color: transparent;
 }
-.nav-button img {
-	width: 60px;
-	height: 40px;
+.close-icon-menu {
+	display: none;
 }
 /* --------------------------------------main--section-1 */
 .main-block {
 	flex: 1 1 auto;
 }
 .main-block-image {
-	min-height: 595px;
+	height: 595px;
 	background-size: cover;
 	background-clip: content-box;
 	background-repeat: no-repeat;
@@ -197,6 +194,9 @@ body {
 	justify-content: space-between;
 	list-style: none;
 	height: 34px;
+}
+#category {
+	display: none;
 }
 .category-item {
 	height: 34px;
@@ -480,7 +480,6 @@ body {
 .subscribe-form {
 	width: 791px;
 	height: 56px;
-	margin-top: 120px;
 	display: flex;
 	margin: 120px auto;
 	justify-content: space-between;
@@ -593,9 +592,9 @@ body {
 	font-family: 'Mulish', sans-serif;
 	font-style: normal;
 	line-height: 20px;
-	margin-top: 35px;
-	margin-left: 39.3%;
+	width: 100%;
 	text-align: center;
+	margin-top: 35px;
 	letter-spacing: 1.8px;
 	color: #ffffff;
 }

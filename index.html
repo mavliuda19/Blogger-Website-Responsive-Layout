@@ -6,31 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./responsive.css" />
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
-				<div class="header-container _container">
+			<header id="open" class="header">
+				<div id="close" class="header-container _container">
 					<a href="" class="header-logo">Natalie Laursen</a>
-					<nav class="header-menu menu">
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#" class="menu-link active">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">About</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">Marathone</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" class="menu-link">Contacts</a>
-							</li>
-						</ul>
-						<!-- <button class="nav-button">
-							<img src="./assets/icons/burger.svg" alt="" />
-						</button> -->
-					</nav>
+					<div class="header-menu menu">
+						<nav class="menu-body">
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#" class="menu-link active"
+										>Home</a
+									>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link">About</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link">Marathone</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link">Contacts</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="#open" class="icon-menu"><span></span></a>
+					<a href="#close" class="close-icon-menu"></a>
 				</div>
 			</header>
 			<main class="main-block">
@@ -55,30 +59,47 @@
 				<section class="block-content _container">
 					<div class="content-wrapper">
 						<div class="content">
-							<ul class="content-categories">
-								<li class="category-item">All(106)</li>
-								<li class="category-item active-item">
-									Recipes(32)
-								</li>
-								<li class="category-item">Travellings(4)</li>
-								<li class="category-item">Health(14)</li>
-								<li class="category-item">Yoga(5)</li>
-							</ul>
+							<div class="category-wrapper">
+								<ul class="content-categories">
+									<li class="category-item">All(106)</li>
+									<li class="category-item active-item">
+										Recipes(32)
+									</li>
+									<li class="category-item">
+										Travellings(4)
+									</li>
+									<li class="category-item">Health(14)</li>
+									<li class="category-item">Yoga(5)</li>
+								</ul>
+								<!-- select mobile-version-->
+								<select name="category" id="category">
+									<option value="All">All(106)</option>
+									<option value="Recipes">Recipes(32)</option>
+									<option value="Travellings">
+										Travellings(4)
+									</option>
+									<option value="Health">Health(14)</option>
+									<option value="Yoga">Yoga(5)</option>
+								</select>
+							</div>
+
 							<div class="content-info">
 								<div class="info-item">
-									<div class="info-overlay"></div>
-									<img
-										class="info-image"
-										src="./assets/images/banana.png"
-										alt="banana"
-									/>
-									<div class="info-detail">
-										<p class="info-detail-date">
-											26<br />January<br />2020
-										</p>
-										<p class="info-detail-tags">
-											#tags<br />#something<br />#title
-										</p>
+									<div>
+										<div class="info-overlay"></div>
+										<img
+											class="info-image"
+											src="./assets/images/banana.png"
+											alt="banana"
+										/>
+										<div class="info-detail">
+											<p class="info-detail-date">
+												26<br />January<br />2020
+											</p>
+											<p class="info-detail-tags">
+												#tags<br />#something<br />#title
+											</p>
+										</div>
 									</div>
 									<div class="item-text-container">
 										<h3 class="item-title">
@@ -124,19 +145,21 @@
 									</div>
 								</div>
 								<div class="info-item">
-									<div class="info-overlay"></div>
-									<img
-										class="info-image"
-										src="./assets/images/plants.png"
-										alt="plants"
-									/>
-									<div class="info-detail">
-										<p class="info-detail-date">
-											26<br />January<br />2020
-										</p>
-										<p class="info-detail-tags">
-											#tags<br />#something<br />#title
-										</p>
+									<div>
+										<div class="info-overlay"></div>
+										<img
+											class="info-image"
+											src="./assets/images/plants.png"
+											alt="plants"
+										/>
+										<div class="info-detail">
+											<p class="info-detail-date">
+												26<br />January<br />2020
+											</p>
+											<p class="info-detail-tags">
+												#tags<br />#something<br />#title
+											</p>
+										</div>
 									</div>
 									<div class="item-text-container">
 										<h3 class="item-title">
